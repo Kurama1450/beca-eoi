@@ -23,6 +23,6 @@ export class PutJugadoresComponent {
       posicion:this.posicion,
     };
 
-    this.servicioJugadores.putJugadores(player).subscribe();
+    this.servicioJugadores.putJugadores(player,this.id).subscribe();
   }
 }

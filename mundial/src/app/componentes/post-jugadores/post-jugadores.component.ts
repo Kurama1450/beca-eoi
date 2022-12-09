@@ -24,6 +24,13 @@ export class PostJugadoresComponent {
       posicion:this.posicion
     };
 
-    this.servicioJugadores.postJugador(player);
+    this.servicioJugadores.postJugador(player).subscribe({
+      next: (jugador:Jugadores)=>{
+        console.log(jugador);
+      },
+      error: (error)=>{
+        console.log(error);
+      }
+    });
   }
 }

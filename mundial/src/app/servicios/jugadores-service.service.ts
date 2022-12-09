@@ -36,14 +36,14 @@ export class JugadoresServiceService {
     return this.http.delete(url,httpOptions);
   }
 
-  putJugadores(jugador:Jugadores):Observable<Jugadores> {
+  putJugadores(jugador:Jugadores, id:number) {
     const httpOptions={
       headers : new HttpHeaders({
         'Content-Type': 'application/json'
       })
     };
 
-    const url = params.URL_PLAYERS + "/" + jugador.id;
+    const url = `${params.URL_PLAYERS}/${id}`;
     return this.http.put<Jugadores>(url, jugador,httpOptions);
   }
 }
