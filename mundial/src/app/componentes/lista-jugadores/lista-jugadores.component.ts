@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Jugadores } from 'src/app/clases/jugadores';
-import {JUGADORES} from 'src/app/mocks/mockJuga';
 import { JugadoresServiceService } from 'src/app/servicios/jugadores-service.service';
 
 
@@ -11,7 +10,7 @@ import { JugadoresServiceService } from 'src/app/servicios/jugadores-service.ser
 })
 export class ListaJugadoresComponent implements OnInit{
 
-  jugadores?:Array<Jugadores>;
+  jugadores:Array<Jugadores>;
 
   constructor(private servicioJugadores:JugadoresServiceService){
     this.jugadores = [];

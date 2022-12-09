@@ -1,1 +1,7 @@
-<p>lista-jugadores works!</p>
+<article class="flex-row">
+    <section class="seleccion" *ngFor="let jugador of jugadores">
+      <h1>{{ jugador.name }}</h1>
+      <p>Edad:{{jugador.age}}</p>
+      <p>Posicion:{{jugador.posicion}}</p>
+    </section>
+  </article>

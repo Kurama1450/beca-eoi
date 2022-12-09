@@ -1,3 +1,14 @@
 <h1>Nuestras Actuales Selecciones</h1>
 
+<nav>
+    <button type="button" [routerLink]="['/go-post-jugadores']">Ir a Post Jugador</button>
+    <button type="button" [routerLink]="['/go-get-jugadores']">Ir a Get Jugadores</button>
+    <button type="button" [routerLink]="['/go-put-jugadores']">Ir a Put Jugadores</button>
+    <button type="button" [routerLink]="['/go-delete-jugadores']">Ir a Delete Jugadores</button>
+</nav>
+
 <app-lista-seleccion></app-lista-seleccion>
+
+<router-outlet>
+
+</router-outlet>

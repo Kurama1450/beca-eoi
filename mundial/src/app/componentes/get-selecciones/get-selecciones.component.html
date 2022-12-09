@@ -1,1 +1,6 @@
-<p>get-selecciones works!</p>
+<article class="flex-row">
+    <section class="seleccion" *ngFor="let seleccion of selecciones">
+      <h1>{{ seleccion.name }}</h1>
+      <p>Nuestros jugadores:{{seleccion.players}}</p>
+    </section>
+  </article>

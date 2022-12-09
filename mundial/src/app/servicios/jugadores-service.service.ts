@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {JUGADORES} from '../mocks/mockJuga'
 import {Jugadores} from '../clases/jugadores'
 import { Observable } from 'rxjs';
 import {params} from '../environment/environmentSele'
