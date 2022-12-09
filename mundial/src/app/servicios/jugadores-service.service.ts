@@ -25,4 +25,26 @@ export class JugadoresServiceService {
 
     return this.http.post<Jugadores>(params.URL_PLAYERS,jugador,httpOptions);
   }
+
+  deleteJugadores(id:number):Observable<{}>{
+    const httpOptions={
+      headers : new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    let url = params.URL_PLAYERS + "/" +id;
+    return this.http.delete(url,httpOptions);
+  }
+
+  putJugadores(jugador:Jugadores):Observable<Jugadores> {
+    const httpOptions={
+      headers : new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    const url = params.URL_PLAYERS + "/" + jugador.id;
+    return this.http.put<Jugadores>(url, jugador,httpOptions);
+  }
 }

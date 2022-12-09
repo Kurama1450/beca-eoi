@@ -29,4 +29,12 @@ export class ListaJugadoresComponent implements OnInit{
       
   }
 
+  postJugador(jugador:Jugadores){
+    this.servicioJugadores.postJugador(jugador)
+    .subscribe(jugador => this.myPlayers.push(jugador));
+  }
+
+  putJugador(jugador:Jugadores){
+    this.servicioJugadores.putJugadores(jugador).subscribe();
+  }
 }
