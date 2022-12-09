@@ -1,1 +1,14 @@
-<p>put-jugadores works!</p>
+<section>
+    <h3>PUT</h3>
+    <input [(ngModel)]="name" placeholder="Name">
+    <br>
+    <input [(ngModel)]="age" placeholder="Age">
+    <br>
+    <label>Especifique su posicion: </label>
+    <select [(ngModel)]="posicion">
+        <option value="Defensa">DEFENSA</option>
+        <option value="Medio">MEDIO</option>
+        <option value="Delantero">DELANTERO</option>
+    </select>
+    <button type="button" (click)="putPlayer()">Put Player</button>
+</section>
