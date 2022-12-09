@@ -33,7 +33,7 @@ export class ListaJugadoresComponent implements OnInit{
     .subscribe(jugador => this.jugadores?.push(jugador));
   }
 
-  putJugador(jugador:Jugadores){
-    this.servicioJugadores.putJugadores(jugador).subscribe();
-  }
+  // putJugador(jugador:Jugadores){
+  //   this.servicioJugadores.putJugadores(jugador,this.id).subscribe();
+  // }
 }
